@@ -1,0 +1,59 @@
+
+.hero-container{
+    background: url('/public/images/img-home.jpg') center center/cover no-repeat;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    object-fit: contain;
+}
+
+.hero-container > h1{
+    color: #fff;
+    font-size: 100px;
+     text-align: center;
+}
+
+
+.hero-container > p{
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hero-btns{
+    margin-top: 2em;
+
+}
+
+.hero-btns .btn {
+    margin: .5em;
+}
+
+.fa-play-circle{
+    margin-left: 4px;
+}
+
+@media screen and (max-width:960px){
+    .hero-container h1{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width:768px){
+    .hero-container h1{
+        font-size: 50px;
+    }
+    .hero-container > p{
+        font-size: 30px;
+    }
+    .btn-mobile{
+        display: block;
+        text-decoration: none;
+    }
+    .btn{
+        width: 100%;
+    }
+}
